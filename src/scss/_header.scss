@@ -11,6 +11,11 @@
     z-index: 999;
     transition: 150ms all ease;
 
+    
+    @media (max-width: 970px) {
+        height: 100px;
+    }
+
     &.scroll {
         background: rgba(0,0,0,.3);
         height: 100px;
@@ -41,6 +46,10 @@
                 font-size: 2.5rem;
                 color: rgb(223, 88, 88);
                 font-family: "Rammetto One", sans-serif;
+
+                @media (max-width: 970px) {
+                    font-size: 1.8rem;
+                }
 
                 span{
                     color: white;
@@ -155,9 +164,19 @@
             display: none;
             padding: 0;
             z-index: 100;
+            
+            svg{
+                width: 50px;
+                height: 50px;
+            }
 
             @media (max-width:970px) {
                 display: flex;
+
+                svg{
+                    width: 40px;
+                    height: 40px;
+                }
             }
 
           }

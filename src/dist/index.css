@@ -91,6 +91,9 @@ ul {
   width: 100%;
   position: relative;
   scroll-margin-top: 10rem; }
+  @media (max-width: 970px) {
+    .hero {
+      height: calc(100vh - 100px); } }
   .hero-content {
     display: flex;
     align-items: center;
@@ -216,6 +219,9 @@ ul {
     bottom: 0;
     left: 50%;
     margin-bottom: 1.2rem; }
+    @media (max-width: 970px) {
+      .hero .scroll-down {
+        display: none; } }
 
 @keyframes scroll {
   0% {
@@ -234,6 +240,9 @@ ul {
   width: 100%;
   z-index: 999;
   transition: 150ms all ease; }
+  @media (max-width: 970px) {
+    .header {
+      height: 100px; } }
   .header.scroll {
     background: rgba(0, 0, 0, 0.3);
     height: 100px;
@@ -256,6 +265,9 @@ ul {
         font-size: 2.5rem;
         color: #df5858;
         font-family: "Rammetto One", sans-serif; }
+        @media (max-width: 970px) {
+          .header .header__nav .logo h1 {
+            font-size: 1.8rem; } }
         .header .header__nav .logo h1 span {
           color: white; }
     .header .header__nav-list {
@@ -331,9 +343,15 @@ ul {
       display: none;
       padding: 0;
       z-index: 100; }
+      .header .header__nav .menu svg {
+        width: 50px;
+        height: 50px; }
       @media (max-width: 970px) {
         .header .header__nav .menu {
-          display: flex; } }
+          display: flex; }
+          .header .header__nav .menu svg {
+            width: 40px;
+            height: 40px; } }
     .header .header__nav .line {
       fill: none;
       stroke: white;
@@ -362,13 +380,16 @@ ul {
       stroke-width: 6; }
 
 .about {
-  height: 100%;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5rem 0 5rem;
   scroll-margin-top: 10rem; }
+  @media (max-width: 970px) {
+    .about {
+      scroll-margin-top: 6rem; } }
   .about .about-content {
     width: 100%;
     display: flex;
@@ -417,6 +438,9 @@ ul {
   width: 100%;
   margin: 10rem 0;
   scroll-margin-top: 10rem; }
+  @media (max-width: 970px) {
+    .projects {
+      scroll-margin-top: 8rem; } }
   .projects .container {
     display: flex;
     flex-direction: column;
@@ -485,6 +509,10 @@ ul {
   height: calc(100vh - 150px);
   width: 100%;
   scroll-margin-top: 10rem; }
+  @media (max-width: 970px) {
+    .contact {
+      height: calc(100vh - 100px);
+      scroll-margin-top: 6rem; } }
   .contact .container .contact-content {
     display: flex;
     align-items: center;

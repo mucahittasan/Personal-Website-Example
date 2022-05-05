@@ -3,6 +3,10 @@
     margin: 10rem 0;
     scroll-margin-top: 10rem;
 
+    @media (max-width: 970px) {
+        scroll-margin-top: 8rem;
+    }
+
     .container{
         display: flex;
         flex-direction: column;

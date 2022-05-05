@@ -1,11 +1,15 @@
 .about{
-    height: 100%;
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 0 5rem;
     scroll-margin-top: 10rem;
+
+    @media (max-width: 970px) {
+        scroll-margin-top: 6rem;
+    }
 
     .about-content{
         width: 100%;

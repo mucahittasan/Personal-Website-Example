@@ -3,6 +3,12 @@
     width: 100%;
     scroll-margin-top: 10rem;
 
+    @media (max-width: 970px) {
+        height: calc(100vh - 100px);
+        scroll-margin-top: 6rem;
+
+    }
+
     .container{
 
         .contact-content{

@@ -4,6 +4,11 @@
     position: relative;
     scroll-margin-top: 10rem;
 
+    @media (max-width: 970px) {
+        height: calc(100vh - 100px);
+        
+    }
+
     &-content {
        
         display: flex;
@@ -197,6 +202,10 @@
         bottom: 0;
         left: 50%;
         margin-bottom: 1.2rem;
+
+        @media (max-width: 970px) {
+            display: none;
+        }
 
         @keyframes scroll {
             0% {
