@@ -7,6 +7,10 @@
   <br />
 </div>
 
+<div align="center">
+  <img width="900" src = 'https://user-images.githubusercontent.com/88967412/166916616-169d95ed-a6d3-4154-ae76-c20583a6272c.jpg' />
+</div>
+
 <h2> ✨ About The Project</h2>
 
 - <p>I made this project to introduce myself, to show the talents I have, to introduce the projects I have done, and to make it easy for people to know about me.
