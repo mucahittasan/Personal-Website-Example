@@ -21,7 +21,7 @@ const projects = [
         title: "Example Website",
         image: require("./images/about_image4.jpg"),
         github: "https://github.com/mucahittasan/Example-Portfolio-Website",
-        demo: "https://mucahittasan.netlify.app/",
+        demo: "https://example-responsive-website.netlify.app/",
     },
     {
         title: "Rock Paper Scissors Game",

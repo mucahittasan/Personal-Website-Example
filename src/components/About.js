@@ -10,14 +10,14 @@ const About = () => {
 
   return (
     <section className="about" id="about">
-      <h2 data-aos="fade-left" className="main-header">
+      <h2 data-aos="fade-up" className="main-header">
         <span>{"<"}</span>
         About
         <span>{">"}</span>
       </h2>
 
       <div className="about-content container">
-        <p data-aos="fade-right" className="description">
+        <p data-aos="zoom-in" className="description">
           Hey there <span>👋</span> , I'm Mucahit. If I have to talk about
           myself briefly, I can say that I am determined, hardworking, ambitious
           and able to produce fast solutions. I love teaching and learning. I
@@ -25,6 +25,14 @@ const About = () => {
           have been doing projects.
         </p>
 
+
+
+        <h3 data-aos="fade-down" className="skills-header">
+          <span>{"<"}</span>
+          Skills
+          <span>{">"}</span>
+
+        </h3>
         <div className="skills">
           {skills.map((skill, index) => (
             <div data-aos="zoom-in" key={index} className="skil">
