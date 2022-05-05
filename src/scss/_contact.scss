@@ -1,0 +1,114 @@
+.contact{
+    height: calc(100vh - 150px);
+    scroll-margin-top: 10rem;
+
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media (max-width: 1100px) {
+            justify-content: center;
+        }
+
+        .contact-form{
+
+            .form-content{
+                display: flex;
+                align-items: center;
+                width: 700px;
+                height: 200px;
+
+                @media (max-width:1300px ) {
+                    flex-direction: column;
+                    height: 450px;
+
+                    .information{
+                        margin-right: 0 !important;
+                        width: 50% !important;
+                        justify-content: center !important;
+
+                        input{
+                            margin-bottom: 2rem;
+                        }
+                    }
+
+                    textarea{
+                        width: 50% !important;
+                    }
+
+                   
+                }
+    
+                .information{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-right: 2rem;
+                    height: 100%;
+    
+                    input{
+                        height: 50px;
+                        width: 100%;
+                        padding: 10px;
+                        color: #fff;
+                        border: 3px solid #ccc;
+                        background: transparent;
+                        font-weight: 500;
+                        outline: none;
+                        border-radius: 5px;
+                        transition: 200ms all ease;
+                        font-size: 15px;
+    
+                        &::placeholder{
+                            color: rgb(214, 214, 214);
+                        }
+    
+                        &:focus{
+                            border: 3px solid rgb(110, 77, 187);
+                        }
+                    }
+    
+                }
+                textarea{
+                    height: 100%;
+                    width: 100%;
+                    padding: 10px;
+                    color: #fff;
+                    border: 3px solid #ccc;
+                    background: transparent;
+                    font-weight: 500;
+                    outline: none;
+                    border-radius: 5px;
+                    transition: 200ms all ease;
+                    font-size: 15px;
+    
+                    &::placeholder{
+                        color: rgb(214, 214, 214);
+                    }
+    
+                    &:focus{
+                        border: 3px solid rgb(110, 77, 187);
+                    }
+                }
+            }
+
+            button{
+                width: 50%;
+                margin: 3rem auto 0;
+
+                @media (max-width: 1100px) {
+                    margin: 2rem auto 0;
+                }
+            }
+        }
+        
+        img{
+            @media (max-width: 1100px) {
+                display: none;
+            }
+        }
+
+    }
+}

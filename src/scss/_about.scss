@@ -1,0 +1,70 @@
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0 5rem;
+    scroll-margin-top: 10rem;
+
+    .about-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .description{
+            max-width: 700px;
+            margin-bottom: 5rem;
+            font-size: 1.2rem;
+
+            @media (max-width: 700px) {
+                font-size: 1rem;
+            }
+    
+            span{
+                font-size: 1.6rem;
+            }
+        }
+    
+        .skills{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+
+            @media (max-width: 970px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem;
+            }
+
+
+            .skill{
+                
+                width: 100%;
+
+              &-title{
+                  font-size: 18px;
+                  font-weight: 600;
+                  margin: 20px 0;
+                  display: flex;
+                  justify-content: space-between;
+              }
+
+              &-bar{
+                  height: 10px;
+                  background-color: rgb(158, 158, 158);
+                  border-radius: 3px;
+              }
+
+              &-per{
+                  height: 10px;
+                  background-color:rgb(223, 88, 88);
+                  border-radius: 3px;
+              }
+            }
+        }
+    }
+    
+
+}

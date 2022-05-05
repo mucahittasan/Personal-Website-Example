@@ -1,0 +1,202 @@
+// @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+.header {
+    width: 100%;
+    height: 150px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: 150ms all ease;
+
+    &.scroll {
+        background: rgba(0,0,0,.3);
+        height: 100px;
+        backdrop-filter: blur(5px);
+
+        h1{
+            font-size: 2.2rem;
+        }
+
+        a{
+            font-size: 15px;
+        }
+    }
+
+    .header__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 150px;
+            }
+            h1{
+                font-size: 2.5rem;
+                color: rgb(223, 88, 88);
+                font-family: "Rammetto One", sans-serif;
+
+                span{
+                    color: white;
+                }
+            }
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+            transition: 300ms ease all;
+
+            li{
+
+                @media (max-width:970px) {
+                    display: none;
+                    opacity: 0;
+                }
+
+                &:not(:first-child){
+                    margin-left: 2rem;
+                }
+
+                &:nth-child(1){
+                    transition: all ease 300ms;
+                    transition-delay: 100ms;
+                }
+                &:nth-child(2){
+                    transition: all ease 300ms;
+                    transition-delay: 300ms;
+                }
+                &:nth-child(3){
+                    transition: all ease 300ms;
+                    transition-delay: 500ms;
+                }
+                &:nth-child(4){
+                    transition: all ease 300ms;
+                    transition-delay: 700ms;
+                    margin-right: 5rem;
+                }
+
+
+                a{
+                    color: white;
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding-bottom: 8px;
+                    position: relative;
+                    transition: 200ms all ease;
+
+                    &:hover::before{
+                        width: 100%;
+                    }
+                    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 15px;
+                        height: 3px;
+                        background:linear-gradient(to right, rgb(223, 88, 88), transparent) ;
+                        transition: 300ms all ease;
+                        
+                    }
+                    
+                }
+            }
+        }
+
+        &-list.active{
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 150px;
+            background-color: white;
+            width: 80%;
+            height: 300px;
+            left: 50%;
+            border-radius: 10px;
+            transform: translateX(-50%);
+            box-shadow: 0px 0px 25px 15px rgba(0, 0, 0, .5);
+
+
+            li{
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+                display: block;
+                margin: 0 !important;
+
+                a{
+                    color: #333;
+
+                    &:before{
+                        background:rgb(223, 88, 88);
+                        width: 0;
+                    }
+
+                    &:hover::before{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .menu {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: none;
+            padding: 0;
+            z-index: 100;
+
+            @media (max-width:970px) {
+                display: flex;
+            }
+
+          }
+          .line {
+            fill: none;
+            stroke: white;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .line1 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+          }
+          .line2 {
+            stroke-dasharray: 60 60;
+            stroke-width: 6;
+          }
+          .line3 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+          }
+          .opened .line1 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+          }
+          .opened .line2 {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+            stroke-width: 6;
+          }
+          .opened .line3 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+            stroke-width: 6;
+          }
+
+          
+    }
+}
+
