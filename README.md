@@ -13,7 +13,7 @@
 
 <h2> ✨ About The Project</h2>
 
-- <p>I made this project to introduce myself, to show the talents I have, to introduce the projects I have done, and to make it easy for people to know about me.
+<p>I made this project to introduce myself, to show the talents I have, to introduce the projects I have done, and to make it easy for people to know about me.
  I have done it so that they can have knowledge in a way.
 </p>
   
