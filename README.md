@@ -13,9 +13,6 @@
  I have done it so that they can have knowledge in a way.
 </p>
   
- - <p>I used React Js, Context Api, React Hooks and Scss technologies while doing this project.</p>
- - <p>Made responsive using media queries</p>
-  
   <h2> 📌 Build With</h2>
   
  - [ReactJs](https://tr.reactjs.org/)
