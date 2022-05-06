@@ -300,17 +300,17 @@ ul {
         padding-bottom: 8px;
         position: relative;
         transition: 200ms all ease; }
-        .header .header__nav-list li a:hover::before {
-          width: 100%; }
         .header .header__nav-list li a::before {
           content: '';
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 15px;
+          width: 0;
           height: 3px;
-          background: linear-gradient(to right, #df5858, transparent);
+          background: #df5858;
           transition: 300ms all ease; }
+        .header .header__nav-list li a:hover::before {
+          width: 100%; }
     .header .header__nav-list.active {
       flex-direction: column;
       justify-content: space-evenly;
