@@ -305,9 +305,9 @@ ul {
           position: absolute;
           bottom: 0;
           left: 0;
-          width: 0;
+          width: 1rem;
           height: 3px;
-          background: #df5858;
+          background: linear-gradient(to right, #df5858, transparent);
           transition: 300ms all ease; }
         .header .header__nav-list li a:hover::before {
           width: 100%; }

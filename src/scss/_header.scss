@@ -105,9 +105,9 @@
                         position: absolute;
                         bottom: 0;
                         left: 0;
-                        width: 0;
+                        width: 1rem;
                         height: 3px;
-                        background: rgb(223, 88, 88);
+                        background: linear-gradient(to right, rgb(223, 88, 88), transparent);
                         transition: 300ms all ease;
                         
                     }
