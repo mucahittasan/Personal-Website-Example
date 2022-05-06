@@ -99,21 +99,21 @@
                     padding-bottom: 8px;
                     position: relative;
                     transition: 200ms all ease;
-
-                    &:hover::before{
-                        width: 100%;
-                    }
                     
                     &::before{
                         content: '';
                         position: absolute;
                         bottom: 0;
                         left: 0;
-                        width: 15px;
+                        width: 0;
                         height: 3px;
-                        background:linear-gradient(to right, rgb(223, 88, 88), transparent) ;
+                        background: rgb(223, 88, 88) ;
                         transition: 300ms all ease;
                         
+                    }
+
+                    &:hover::before{
+                        width: 100%;
                     }
                     
                 }
