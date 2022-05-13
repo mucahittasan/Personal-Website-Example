@@ -1,20 +1,11 @@
-import React, { useEffect } from "react";
 import projects from "../data";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 
 const Projects = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  }, []);
-
   return (
 
     <section className="projects" id="projects">
       <div className="container">
-        <h2 data-aos="fade-down" className="main-header">
+        <h2 className="main-header">
           <span>{"<"}</span>
           Projects
           <span>{">"}</span>
@@ -22,7 +13,7 @@ const Projects = () => {
 
         <div className="projects-content">
           {projects.map((project, index) => (
-            <div data-aos="zoom-in" key={index} className="project">
+            <div key={index} className="project">
               <h4>{project.title}</h4>
               <div className="project-content">
                 <div className="project-image">
