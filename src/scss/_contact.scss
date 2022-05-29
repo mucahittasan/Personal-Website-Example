@@ -1,9 +1,9 @@
 .contact{
-    height: 100vh;
+    height: calc(100vh - 250px);
     scroll-margin-top: 10rem;
 
     @media (max-width: 970px) {
-        height: calc(100vh - 150px);
+        height: calc(100vh - 250px);
         scroll-margin-top: 6rem;
 
     }
