@@ -7,7 +7,7 @@
   <br />
 </div>
 
-<div align="center">
+<div align="center"> 
   <img width="900" src = 'https://user-images.githubusercontent.com/88967412/166916616-169d95ed-a6d3-4154-ae76-c20583a6272c.jpg' />
 </div>
 
