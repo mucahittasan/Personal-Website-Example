@@ -1,4 +1,3 @@
-import me from "../images/me.jpg";
 import "animate.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -43,7 +42,7 @@ const Hero = () => {
                 width="1000"
                 height="1000"
               >
-                <image href={me} x="0" y="0" width="1000" height="1000" />
+                <image href="https://avatars.githubusercontent.com/u/88967412?v=4" x="0" y="0" width="1000" height="1000" />
               </pattern>
               <clipPath id="shape">
                 <path fill="currentColor">

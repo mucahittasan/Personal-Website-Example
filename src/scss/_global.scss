@@ -18,10 +18,23 @@ body{
     font-family: "Poppins", sans-serif;
     color: white;
     overflow-x: hidden;
-    background-image: url('../images/bg-image.png');
+    // background-image: url('https://wallpaperaccess.com/full/4329455.jpg');
+    background-image: url('https://images5.alphacoders.com/100/1000939.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    z-index: -1;
 }
 
 a{
@@ -40,6 +53,7 @@ ul{
         padding: 0 2rem;
     }
 }
+
 
 .code{
     color: rgb(223, 88, 88);
