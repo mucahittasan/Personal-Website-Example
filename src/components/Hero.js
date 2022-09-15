@@ -19,14 +19,7 @@ const Hero = () => {
             {text} {<Cursor />}
             <span className="code">{"</h3>"}</span>
           </h3>
-          <a
-            href="https://drive.google.com/file/d/1rrugQNXWBraXKfXmFh5MTF0CnCrET5L8/view?usp=sharing"
-            className="btn-primary"
-            target="_blank"
-            rel="noreferrer"
-          >
-            My Resume
-          </a>
+         
         </div>
 
         <div className="hero-image">
