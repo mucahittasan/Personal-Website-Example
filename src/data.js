@@ -5,6 +5,12 @@ const projects = [
         github: "https://github.com/mucahittasan/React-E-Commerce--App",
         demo: "https://my-project2-steel.vercel.app/",
     },
+     {
+        title: "Twitter Clone",
+        image: require("./images/about_image8.jpg"),
+        github: "https://github.com/mucahittasan/Twitter-Clone",
+        demo: "https://twitter-clone-mucahittasan.vercel.app/",
+    },
     {
         title: "Weather App",
         image: require("./images/about_image2.jpg"),
