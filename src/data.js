@@ -7,7 +7,7 @@ const projects = [
     },
      {
         title: "Twitter Clone",
-        image: require("./images/about_image8.jpg"),
+        image: require("./images/about_image8.png"),
         github: "https://github.com/mucahittasan/Twitter-Clone",
         demo: "https://twitter-clone-mucahittasan.vercel.app/",
     },

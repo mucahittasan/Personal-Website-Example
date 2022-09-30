@@ -33,7 +33,7 @@ const skills = [
     },
     {
         name: 'NodeJs',
-        per: "70%",
+        per: "60%",
     },
     {
         name: 'Figma',
