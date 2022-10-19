@@ -28,11 +28,7 @@
         .description{
             max-width: 700px;
             margin-bottom: 5rem;
-            font-size: 1.2rem;
-
-            @media (max-width: 700px) {
-                font-size: 1rem;
-            }
+            font-size: clamp(1rem,1.9791vw, 1.2rem);
     
             span{
                 font-size: 1.6rem;
@@ -56,11 +52,12 @@
                 width: 100%;
 
               &-title{
-                  font-size: 18px;
+                  font-size: clamp(16px,1.875vw, 18px);
                   font-weight: 600;
                   margin: 20px 0;
                   display: flex;
                   justify-content: space-between;
+
               }
 
               &-bar{

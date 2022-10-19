@@ -49,6 +49,8 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                position: relative;
+                top: 30px;
 
                 h2{
                     font-size: 3rem !important;
@@ -109,7 +111,7 @@
             right: 50px;
 
             @media (max-width:1540px){
-                display: none;
+               position: static;
             }
 
             ul {
@@ -118,10 +120,27 @@
                 align-items: center;
                 position: relative;
 
+                @media (max-width:1540px){
+                    flex-direction: row;
+                    column-gap: 30px;
+                }
+
                 li {
+                    @media (max-width:1540px){
+                        margin-bottom: 10rem !important;
+                    }
+
+                    @media (max-width: 970px) {
+                        margin-bottom: 5rem !important;
+                    }
+
                     &:not(:last-child) {
 
                         margin-bottom: 2rem;
+
+                        @media (max-width:1540px){
+                            margin-bottom: 0;
+                        }
                     }
 
                     &:nth-child(1) a:hover::before {
@@ -166,8 +185,8 @@
                         align-items: center;
                         justify-content: center;
                         color: #333;
-                        width: 50px;
-                        height: 50px;
+                        width: clamp(40px,4.5454vw, 50px);
+                        aspect-ratio: 1;
                         border-radius: 50%;
                         background-color: white;
                         position: relative;

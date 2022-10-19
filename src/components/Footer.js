@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="social">
+      {/* <div className="social">
         <ul>
           <li>
             <a
@@ -42,11 +42,11 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div className="copy">
         &copy; Copyright 2022 -{" "}
         <a
-          href="https://linkedin.com/in/mucahittasan"
+          href="https://github.com/mucahittasan"
           target="_blank"
           rel="noreferrer"
         >
