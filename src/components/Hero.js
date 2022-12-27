@@ -22,55 +22,7 @@ const Hero = () => {
          
         </div>
 
-        <div className="hero-image">
-          <svg
-            className="hero-me"
-            viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <defs>
-              <pattern
-                id="imageId"
-                patternUnits="userSpaceOnUse"
-                width="1000"
-                height="1000"
-              >
-                <image href="https://avatars.githubusercontent.com/u/88967412?v=4" x="0" y="0" width="1000" height="1000" />
-              </pattern>
-              <clipPath id="shape">
-                <path fill="currentColor">
-                  <animate
-                    attributeName="d"
-                    dur="2s"
-                    repeatCount="indefinite"
-                    values="
-                    M880.5,671.5Q774,843,590,876.5Q406,910,258,799Q110,688,90.5,490.5Q71,293,239.5,195.5Q408,98,567,157.5Q726,217,856.5,358.5Q987,500,880.5,671.5Z;
-                    M810,645Q731,790,568,852.5Q405,915,230,814.5Q55,714,81.5,512.5Q108,311,265,234Q422,157,614,137Q806,117,847.5,308.5Q889,500,810,645Z;
-                    M880.5,671.5Q774,843,590,876.5Q406,910,258,799Q110,688,90.5,490.5Q71,293,239.5,195.5Q408,98,567,157.5Q726,217,856.5,358.5Q987,500,880.5,671.5Z;
-                    "
-                  />
-                </path>
-              </clipPath>
-            </defs>
-            <g clipPath="url(#shape)">
-              <path fill="url(#imageId)">
-                <animate
-                  attributeName="d"
-                  dur="2s"
-                  repeatCount="indefinite"
-                  values="
-        M880.5,671.5Q774,843,590,876.5Q406,910,258,799Q110,688,90.5,490.5Q71,293,239.5,195.5Q408,98,567,157.5Q726,217,856.5,358.5Q987,500,880.5,671.5Z;
-        M810,645Q731,790,568,852.5Q405,915,230,814.5Q55,714,81.5,512.5Q108,311,265,234Q422,157,614,137Q806,117,847.5,308.5Q889,500,810,645Z;
-        M880.5,671.5Q774,843,590,876.5Q406,910,258,799Q110,688,90.5,490.5Q71,293,239.5,195.5Q408,98,567,157.5Q726,217,856.5,358.5Q987,500,880.5,671.5Z;
-        
-        "
-                />
-              </path>
-            </g>
-          </svg>
-        </div>
-
-        <div className="social">
+                    <div className="social">
           <ul>
             <li>
               <a
