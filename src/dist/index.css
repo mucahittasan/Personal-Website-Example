@@ -107,6 +107,7 @@ ul {
     .hero {
       height: calc(100vh - 100px); } }
   .hero-content {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -114,11 +115,14 @@ ul {
       .hero-content {
         height: calc(100vh - 100px);
         justify-content: center; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 900px) {
       .hero-content {
         flex-direction: column; } }
     .hero-content .description {
-      max-width: 700px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       animation: description;
       animation-duration: 4s; }
 
@@ -136,7 +140,8 @@ ul {
           align-items: center;
           text-align: center;
           position: relative;
-          top: 30px; }
+          height: 100%;
+          justify-content: center; }
           .hero-content .description h2 {
             font-size: 3rem !important; }
           .hero-content .description h3 {
@@ -182,65 +187,61 @@ ul {
         flex-direction: column;
         align-items: center;
         position: relative; }
-        @media (max-width: 1540px) {
+        @media (max-width: 900PX) {
           .hero-content .social ul {
             flex-direction: row;
             column-gap: 30px; } }
-        @media (max-width: 1540px) {
-          .hero-content .social ul li {
-            margin-bottom: 10rem !important; } }
-        @media (max-width: 970px) {
-          .hero-content .social ul li {
-            margin-bottom: 5rem !important; } }
-        .hero-content .social ul li:not(:last-child) {
-          margin-bottom: 2rem; }
-          @media (max-width: 1540px) {
-            .hero-content .social ul li:not(:last-child) {
-              margin-bottom: 0; } }
-        .hero-content .social ul li:nth-child(1) a:hover::before {
-          transform: scale(1);
-          background: linear-gradient(to left, #E05C4F, #B931AB); }
-        .hero-content .social ul li:nth-child(1) a:hover {
-          color: white !important; }
-        .hero-content .social ul li:nth-child(2) a:hover::before {
-          transform: scale(1);
-          background: #1D9BF0; }
-        .hero-content .social ul li:nth-child(2) a:hover {
-          color: white !important; }
-        .hero-content .social ul li:nth-child(3) a:hover::before {
-          transform: scale(1);
-          background: #0077B7; }
-        .hero-content .social ul li:nth-child(3) a:hover {
-          color: white !important; }
-        .hero-content .social ul li:nth-child(4) a:hover::before {
-          transform: scale(1);
-          background: #333; }
-        .hero-content .social ul li:nth-child(4) a:hover {
-          color: white !important; }
-        .hero-content .social ul li a {
-          font-size: 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: #333;
-          width: clamp(40px, 4.5454vw, 50px);
-          aspect-ratio: 1;
-          border-radius: 50%;
-          background-color: white;
-          position: relative;
-          overflow: hidden; }
-          .hero-content .social ul li a i {
-            z-index: 10; }
-          .hero-content .social ul li a::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        .hero-content .social ul li {
+          margin-bottom: 5rem !important; }
+          .hero-content .social ul li:not(:last-child) {
+            margin-bottom: 2rem; }
+            @media (max-width: 1540px) {
+              .hero-content .social ul li:not(:last-child) {
+                margin-bottom: 0; } }
+          .hero-content .social ul li:nth-child(1) a:hover::before {
+            transform: scale(1);
+            background: linear-gradient(to left, #E05C4F, #B931AB); }
+          .hero-content .social ul li:nth-child(1) a:hover {
+            color: white !important; }
+          .hero-content .social ul li:nth-child(2) a:hover::before {
+            transform: scale(1);
+            background: #1D9BF0; }
+          .hero-content .social ul li:nth-child(2) a:hover {
+            color: white !important; }
+          .hero-content .social ul li:nth-child(3) a:hover::before {
+            transform: scale(1);
+            background: #0077B7; }
+          .hero-content .social ul li:nth-child(3) a:hover {
+            color: white !important; }
+          .hero-content .social ul li:nth-child(4) a:hover::before {
+            transform: scale(1);
+            background: #333; }
+          .hero-content .social ul li:nth-child(4) a:hover {
+            color: white !important; }
+          .hero-content .social ul li a {
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            width: clamp(40px, 4.5454vw, 50px);
+            aspect-ratio: 1;
             border-radius: 50%;
-            transition: 300ms all ease;
-            transform: scale(0); }
+            background-color: white;
+            position: relative;
+            overflow: hidden; }
+            .hero-content .social ul li a i {
+              z-index: 10; }
+            .hero-content .social ul li a::before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              transition: 300ms all ease;
+              transform: scale(0); }
   .hero .scroll-down {
     position: absolute;
     bottom: 0;

@@ -1,11 +1,11 @@
 const projects = [
     {
         title: "E-Commerce App",
-        image: require("./images/about_image1.jpg"),
-        github: "https://github.com/mucahittasan/React-E-Commerce--App",
-        demo: "https://my-project2-steel.vercel.app/",
+        image: require("./images/about_image1.png"),
+        github: "https://github.com/mucahittasan/E-Commerce-MERN",
+        demo: "https://e-commerce-app-alpha-brown.vercel.app/",
     },
-     {
+    {
         title: "Twitter Clone",
         image: require("./images/about_image8.png"),
         github: "https://github.com/mucahittasan/Twitter-Clone",
